@@ -1,5 +1,15 @@
 import tkinter as tk
 from tkinter import font
+from typing import NamedTuple
+
+class Player(NamedTuple):
+    label : str
+    color : str
+
+class Move(NamedTuple):
+    col : int
+    row : int
+    label : str = ""
 
 class TicTacToeBoard(tk.Tk):
     def __init__(self):
