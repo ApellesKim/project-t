@@ -12,6 +12,20 @@ class Move(NamedTuple):
     row : int
     label : str = ""
 
+"""
+Create 4*4 tic-tac-toe game.
+This is played in 5*5 grid board and when anyone who makes 4 straight connection wins
+
+Thigs to consider:
+1. increase board size
+2. update logic (There will be much more winning combos.) 
+
+Board size can be simply changed to 5. (BOARD_SIZE=5)
+
+Winning_combo:
+
+
+"""
 BOARD_SIZE=3
 DEFAULT_PLAYERS=(
     Player(label="X", color="blue"),
